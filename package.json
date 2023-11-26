@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "env-cmd -f ./config/.env.dev.local next dev",
+    "dev:build": "env-cmd -f ./config/.env.dev.local next build",
+    "dev:start": "env-cmd -f ./config/.env.dev.local next start",
     "prod": "env-cmd -f ./config/.env.prod.local next dev",
-    "build": "next build",
-    "start": "next start",
+    "prod:build": "env-cmd -f ./config/.env.prod.local next build",
+    "prod:start": "env-cmd -f ./config/.env.prod.local next start",
     "lint": "next lint"
   },
   "dependencies": {
